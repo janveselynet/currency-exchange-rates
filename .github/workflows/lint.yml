@@ -1,0 +1,14 @@
+name: Run lint
+
+on: pull_request
+
+jobs:
+  test:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
+      - name: Run lint
+        run: yarn lint
