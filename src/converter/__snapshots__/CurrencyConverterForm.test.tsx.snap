@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CurrencyConverterForm renders properly 1`] = `
+<div>
+  <form>
+    <input
+      class="sc-bcXHqe gkbLzw"
+      id="amount"
+      placeholder="Enter amount"
+      type="number"
+      value=""
+    />
+    CZK to
+    <select
+      class="sc-gswNZR edpAjZ"
+      name="currencyCode"
+    >
+      <option
+        value="CZK"
+      >
+        CZK
+      </option>
+      <option
+        value="USD"
+      >
+        USD
+      </option>
+      <option
+        value="EUR"
+      >
+        EUR
+      </option>
+    </select>
+    <button
+      class="sc-dkrFOg eqBICR"
+    >
+      Convert
+    </button>
+  </form>
+</div>
+`;
