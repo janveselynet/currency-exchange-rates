@@ -23,6 +23,7 @@ const Table = styled.table`
       background: #e9e9e9;
     }
 
+    td:nth-child(3),
     td:last-child {
       text-align: right;
     }
@@ -40,7 +41,8 @@ export default function RatesTable({ rates }: RatesTableProps): JSX.Element {
         <tr>
           <th>Country</th>
           <th>Currency</th>
-          <th>Currency code</th>
+          <th>Amount</th>
+          <th>Code</th>
           <th>Rate</th>
         </tr>
       </thead>
@@ -49,6 +51,7 @@ export default function RatesTable({ rates }: RatesTableProps): JSX.Element {
           <tr key={index}>
             <td>{rate.country}</td>
             <td>{rate.currency}</td>
+            <td>{rate.amount}</td>
             <td>{rate.currencyCode}</td>
             <td>{rate.rate.toFixed(3)}</td>
           </tr>
