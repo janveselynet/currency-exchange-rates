@@ -1,4 +1,4 @@
-import { Rate } from '../../Rate';
+import { Rate } from '../Rate';
 
 export const rates: Array<Rate> = [
   {

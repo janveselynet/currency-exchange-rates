@@ -1,15 +1,21 @@
 import React from 'react';
 
+const roundForDisplay = (amount: number): number =>
+  Math.round(amount * 1000) / 1000;
+
 interface ConversionResultProps {
-  amountInCzkToConvert: number;
+  amountInCzk: number;
   amountInTargetedCurrency: number;
   targetedCurrencyCode: string;
 };
 
 export default function ConversionResult({
-  amountInCzkToConvert,
+  amountInCzk,
   amountInTargetedCurrency,
   targetedCurrencyCode
 }: ConversionResultProps): JSX.Element {
-  return <p>{amountInCzkToConvert} CZK = {amountInTargetedCurrency} {targetedCurrencyCode}</p>;
+  const roundedAmountInCzk = roundForDisplay(amountInCzk);
+  const roundedAmountInTargetedCurrency = roundForDisplay(amountInTargetedCurrency);
+  
+  return <p>{roundedAmountInCzk} CZK = {roundedAmountInTargetedCurrency} {targetedCurrencyCode}</p>;
 }

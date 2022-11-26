@@ -5,7 +5,7 @@ import ConversionResult from './ConversionResult';
 describe('ConversionResult', () => {
   it('renders properly', () => {
     const props = {
-      amountInCzkToConvert: 100,
+      amountInCzk: 100,
       amountInTargetedCurrency: 250,
       targetedCurrencyCode: 'USD',
     };
