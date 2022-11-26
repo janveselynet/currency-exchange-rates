@@ -9,5 +9,5 @@ export const convertCzkToOther = (
   if (rate === undefined) {
     throw new Error(`Unknown rate for currency ${targetedCurrencyCode}`);
   }
-  return amountInCzk / rate.rate;
+  return amountInCzk / rate.rate * rate.amount;
 }

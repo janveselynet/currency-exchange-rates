@@ -3,7 +3,7 @@
 exports[`RatesTable renders table with currency exchange rates 1`] = `
 <div>
   <table
-    class="sc-bcXHqe kMAXua"
+    class="sc-bcXHqe iPxklV"
   >
     <thead>
       <tr>
@@ -14,7 +14,10 @@ exports[`RatesTable renders table with currency exchange rates 1`] = `
           Currency
         </th>
         <th>
-          Currency code
+          Amount
+        </th>
+        <th>
+          Code
         </th>
         <th>
           Rate
@@ -28,6 +31,9 @@ exports[`RatesTable renders table with currency exchange rates 1`] = `
         </td>
         <td>
           dollar
+        </td>
+        <td>
+          1
         </td>
         <td>
           AUD
@@ -44,6 +50,9 @@ exports[`RatesTable renders table with currency exchange rates 1`] = `
           real
         </td>
         <td>
+          1
+        </td>
+        <td>
           BRL
         </td>
         <td>
@@ -56,6 +65,9 @@ exports[`RatesTable renders table with currency exchange rates 1`] = `
         </td>
         <td>
           lev
+        </td>
+        <td>
+          1
         </td>
         <td>
           BGN
@@ -72,6 +84,9 @@ exports[`RatesTable renders table with currency exchange rates 1`] = `
           dollar
         </td>
         <td>
+          1
+        </td>
+        <td>
           CAD
         </td>
         <td>
@@ -84,6 +99,9 @@ exports[`RatesTable renders table with currency exchange rates 1`] = `
         </td>
         <td>
           renminbi
+        </td>
+        <td>
+          1
         </td>
         <td>
           CNY
@@ -100,10 +118,30 @@ exports[`RatesTable renders table with currency exchange rates 1`] = `
           kuna
         </td>
         <td>
+          1
+        </td>
+        <td>
           HRK
         </td>
         <td>
           3.235
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Hungary
+        </td>
+        <td>
+          forint
+        </td>
+        <td>
+          100
+        </td>
+        <td>
+          HUF
+        </td>
+        <td>
+          5.923
         </td>
       </tr>
     </tbody>
