@@ -2,6 +2,7 @@ import React from 'react';
 import { Rate } from '../rates/Rate';
 import ConversionResult from './ConversionResult';
 import CurrencyConverterForm from './CurrencyConverterForm';
+import { convertCzkToOther } from './currencyConversion';
 
 interface CurrencyConverterProps {
   availableRates: Array<Rate>;
@@ -24,6 +25,8 @@ export default function CurrencyConverter({
     setTargetedCurrencyCode(targetedCurrencyCode);
   };
 
+  const amountInTargetedCurrency = convertCzkToOther(amountInCzkToConvert, targetedCurrencyCode, availableRates);
+
   return (
     <React.Fragment>
       <CurrencyConverterForm
@@ -31,8 +34,8 @@ export default function CurrencyConverter({
         onFormSubmitted={handleFormSubmit}
       />
       <ConversionResult
-        amountInCzkToConvert={amountInCzkToConvert}
-        amountInTargetedCurrency={amountInCzkToConvert}
+        amountInCzk={amountInCzkToConvert}
+        amountInTargetedCurrency={amountInTargetedCurrency}
         targetedCurrencyCode={targetedCurrencyCode}
       />
     </React.Fragment>
