@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConversionResult renders properly 1`] = `
+<div>
+  <p>
+    100
+     CZK = 
+    250
+     
+    USD
+  </p>
+</div>
+`;

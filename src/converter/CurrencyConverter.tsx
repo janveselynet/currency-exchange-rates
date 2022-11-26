@@ -10,11 +10,13 @@ interface CurrencyConverterProps {
 export default function CurrencyConverter({
   availableRates,
 }: CurrencyConverterProps): JSX.Element {
-  const [amountInCzkToConvert, setAmountInCzkToConvert] = React.useState<number>(0);
-  const [targetedCurrencyCode, setTargetedCurrencyCode] = React.useState<string>('CZK');
-
   const availableCurrencyCodes = availableRates.map(
     (availableRate) => availableRate.currencyCode,
+  );
+
+  const [amountInCzkToConvert, setAmountInCzkToConvert] = React.useState<number>(0);
+  const [targetedCurrencyCode, setTargetedCurrencyCode] = React.useState<string>(
+    availableCurrencyCodes[0]
   );
 
   const handleFormSubmit = (amountInCzkToConvert: number, targetedCurrencyCode: string): void => {
@@ -30,6 +32,7 @@ export default function CurrencyConverter({
       />
       <ConversionResult
         amountInCzkToConvert={amountInCzkToConvert}
+        amountInTargetedCurrency={amountInCzkToConvert}
         targetedCurrencyCode={targetedCurrencyCode}
       />
     </React.Fragment>
