@@ -1,0 +1,242 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders error state when fetching rates fails 1`] = `
+<div>
+  <p>
+    Error occurred when loading rates. See details: Error: Unable to fetch rates
+  </p>
+</div>
+`;
+
+exports[`App renders loading state when rates are initially loading 1`] = `
+<div>
+  <p>
+    Loading rates...
+  </p>
+</div>
+`;
+
+exports[`App renders properly when no rates available 1`] = `
+<div>
+  <p>
+    No rates available, sorry.
+  </p>
+</div>
+`;
+
+exports[`App renders properly when rates available 1`] = `
+<div>
+  <h1>
+    Currency converter
+  </h1>
+  <form>
+    <input
+      class="sc-gswNZR cyIJhE"
+      id="amount"
+      placeholder="Enter amount"
+      type="number"
+      value=""
+    />
+    CZK to
+    <select
+      class="sc-dkrFOg hFFHwP"
+      name="currencyCode"
+    >
+      <option
+        value="AUD"
+      >
+        AUD
+      </option>
+      <option
+        value="BRL"
+      >
+        BRL
+      </option>
+      <option
+        value="BGN"
+      >
+        BGN
+      </option>
+      <option
+        value="CAD"
+      >
+        CAD
+      </option>
+      <option
+        value="CNY"
+      >
+        CNY
+      </option>
+      <option
+        value="HRK"
+      >
+        HRK
+      </option>
+      <option
+        value="HUF"
+      >
+        HUF
+      </option>
+    </select>
+    <button
+      class="sc-hLBbgP hZYYNp"
+    >
+      Convert
+    </button>
+  </form>
+  <p>
+    0
+     CZK = 
+    0
+     
+    AUD
+  </p>
+  <h1>
+    Currency exchange rates
+  </h1>
+  <table
+    class="sc-bcXHqe iPxklV"
+  >
+    <thead>
+      <tr>
+        <th>
+          Country
+        </th>
+        <th>
+          Currency
+        </th>
+        <th>
+          Amount
+        </th>
+        <th>
+          Code
+        </th>
+        <th>
+          Rate
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Australia
+        </td>
+        <td>
+          dollar
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          AUD
+        </td>
+        <td>
+          15.831
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Brazil
+        </td>
+        <td>
+          real
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          BRL
+        </td>
+        <td>
+          4.395
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Bulgaria
+        </td>
+        <td>
+          lev
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          BGN
+        </td>
+        <td>
+          12.473
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Canada
+        </td>
+        <td>
+          dollar
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          CAD
+        </td>
+        <td>
+          17.559
+        </td>
+      </tr>
+      <tr>
+        <td>
+          China
+        </td>
+        <td>
+          renminbi
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          CNY
+        </td>
+        <td>
+          3.278
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Croatia
+        </td>
+        <td>
+          kuna
+        </td>
+        <td>
+          1
+        </td>
+        <td>
+          HRK
+        </td>
+        <td>
+          3.235
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Hungary
+        </td>
+        <td>
+          forint
+        </td>
+        <td>
+          100
+        </td>
+        <td>
+          HUF
+        </td>
+        <td>
+          5.923
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
