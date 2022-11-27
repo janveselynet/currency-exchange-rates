@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# ignore npm lock file, use yarn & yarn.lock instead
+package-lock.json 
