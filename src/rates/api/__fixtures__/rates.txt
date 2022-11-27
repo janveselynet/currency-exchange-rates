@@ -1,0 +1,9 @@
+25 Nov 2022 #228
+Country|Currency|Amount|Code|Rate
+Australia|dollar|1|AUD|15.831
+Brazil|real|1|BRL|4.395
+Bulgaria|lev|1|BGN|12.473
+Canada|dollar|1|CAD|17.559
+China|renminbi|1|CNY|3.278
+Croatia|kuna|1|HRK|3.235
+Hungary|forint|100|HUF|5.923
