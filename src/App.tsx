@@ -6,7 +6,7 @@ import { fetchRates } from './rates/api/ratesApi';
 import { Rate } from './rates/Rate';
 
 export default function App(): JSX.Element {
-  const ratesQuery = useQuery({ queryKey: ['rates'], queryFn: fetchRates });
+  const ratesQuery = useQuery<Array<Rate>>({ queryKey: ['rates'], queryFn: fetchRates });
 
   if (ratesQuery.isLoading) {
     return <p>Loading rates...</p>;
@@ -19,15 +19,13 @@ export default function App(): JSX.Element {
     return <p>No rates available, sorry.</p>;
   }
 
-  const rates = ratesQuery.data as Array<Rate>;
-
   return (
     <React.Fragment>
       <h1>Currency converter</h1>
-      <CurrencyConverter availableRates={rates} />
+      <CurrencyConverter availableRates={ratesQuery.data} />
 
       <h1>Currency exchange rates</h1>
-      <RatesTable rates={rates} />
+      <RatesTable rates={ratesQuery.data} />
     </React.Fragment>
   );
 }
